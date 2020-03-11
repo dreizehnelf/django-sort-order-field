@@ -19,10 +19,12 @@ class SortOrderInput(admin_widgets.AdminBigIntegerFieldWidget):
     @property
     def media(self):
         js = (
+            'admin/js/jquery.init.js',
             'sort_order_field/sort_order_field.js',
         )
         css = {
             'screen': (
+                'admin/css/responsive.css',
                 'sort_order_field/sort_order_field.css',
             )
         }
